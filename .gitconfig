@@ -1,0 +1,17 @@
+[user]
+	email = idemchenko.js@gmail.com
+	name = Ivan Demchenko
+	signingkey = 63F1F7D8B4503F31F80D2A6C7C51619CABE0F161
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[commit]
+	gpgsign = true
+[gpg]
+	program = /opt/homebrew/bin/gpg
